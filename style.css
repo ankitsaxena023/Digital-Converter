@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(to right, #414141 0%, #000000 100%);
+    /* background-image: linear-gradient(to right, #2C3E50,#000000); */
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.parent
+{
+    position: relative;
+    width: 40rem;
+    height: 40rem;
+    background-color: #1c1c1c;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.parent::before
+{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 40rem;
+    height: 40rem;
+    background: linear-gradient(0deg, transparent,
+    #00C8E9, #00C8E9);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+} 
+
+.parent::after
+{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 40rem;
+    height: 40rem;
+    background: linear-gradient(0deg, transparent,
+    #00C8E9, #00C8E9);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+
+@keyframes animate 
+{
+    0% 
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+.child
+{
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    inset: 2px;
+    background-image: linear-gradient(270deg, #000000 0%,#064D5F 100%);
+    z-index: 10;
+    border-radius: 8px;
+    color: #fff;
+}
+
+h1
+{
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 3rem;
+}
+
+#unitnav
+{
+    display: flex;
+    margin-top: 4rem;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+}
+
+label
+{
+    display: flex;
+    flex-direction: column;
+    border-radius: 2px solid #151515;
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+}
+
+input
+{
+    font-size: 1rem;
+}
+
+.col
+{
+    margin-right: 3rem;
+    margin-left: 2rem;
+    
+}
+
+.form-control
+{
+    padding: 0.5rem 1.5rem 0.5rem 0;
+}
+
+.inputVal
+{
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+}
+
+.inputVal label
+{
+    position: relative;
+    left: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+#setVal
+{
+    position: relative;
+    left: 2rem;
+    padding: 0.7rem 10rem 0.7rem 0.3rem;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.btn
+{
+    position: relative;
+    top: 5rem;
+    left: 2rem;
+    transition: 0.5s transform;
+}
+
+.btn
+{
+    padding: 0.7rem 1rem;
+    margin-right: 4.4rem;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid var(--color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+    background: #064D5F;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    color: #fff;
+}
+
+.btn:hover
+{
+    background: #00C8E9;
+    color: #000000;
+}
+
+.btn:active
+{
+    transform: scale(0.95);
+    box-shadow: none;
+}
+.output
+{
+    position: relative;
+    top: 5rem;
+    left: 2rem;
+}
+
+#getVal
+{
+    padding: 0.7rem 10rem 0.7rem 0.3rem;
+    border-radius: 5px;
+    border-style: none;
+}
+
+
+#unit1, #unit2
+{
+    background-color: #000508;
+    color: #fff;
+    border-radius: 2px solid #000508;
+    cursor: pointer;
+}
+
+
+select
+{
+    background-color: #000508;
+    color: #fff;
+    border-radius: 2px solid #000508;
+    cursor: pointer;
+}
+
+.convert
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 50px) and (max-width: 480px){
+
+body
+{
+    background-image: linear-gradient(to right, #414141 0%, #050505 100%);
+}
+
+.inputVal label
+{
+    margin-left: 2rem;
+}
+
+#setVal
+{
+    position: relative;
+    left: 3.9rem;
+    padding: 0.7rem 6.7rem 0.7rem 0.3rem;
+    border-radius: 5px;
+    
+}
+
+#getVal
+{
+    position: relative;
+    left: 1.9rem;
+    padding: 0.7rem 6.7rem 0.7rem 0.3rem;
+    border-radius: 5px;
+}
+
+.btn1
+{
+    top: 5rem;
+    left: 3.9rem;
+}
+
+.btn2
+{
+    top: 5rem;
+}
+
+.btn3
+{
+    left: 0.5rem;
+}
+
+#unitnav
+{
+    display: flex;
+    justify-content: space-evenly
+}
+
+.form-group
+{
+    margin: 0;
+}
+
+.parent
+{
+    margin-bottom: 2rem;
+    width: 90%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.parent::before
+{
+    top: -38%;
+    left: -50%;
+    width: 20rem;
+    height: 40rem;
+} 
+
+.parent::after
+{
+    top: -38%;
+    left: -50%;
+    width: 20rem;
+    height: 40rem;
+}
+}
+
+@media screen and (min-width: 481px) and (max-width: 645px){
+
+body
+{
+    background-image: linear-gradient(to right, #414141 0%, #050505 100%);
+}
+
+.parent
+{
+    margin-bottom: 2rem;
+    width: 90%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.parent::before
+{
+    top: -20%;
+    left: -49%;
+    width: 100%;
+    height: 28rem;
+} 
+
+.parent::after
+{
+    top: -20%;
+    left: -49%;
+    width: 100%;
+    height: 28rem;
+}
+}
+
+
+
+
+
