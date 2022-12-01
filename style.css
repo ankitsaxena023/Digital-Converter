@@ -320,6 +320,22 @@ body
     height: 28rem;
 } 
 
+#setVal
+{
+    position: relative;
+    left: 3.7rem;
+    padding: 0.7rem 6.7rem 0.7rem 0.3rem;
+    border-radius: 5px;
+}
+
+#getVal
+{
+    position: relative;
+    left: 1.7rem;
+    padding: 0.7rem 6.7rem 0.7rem 0.3rem;
+    border-radius: 5px;
+}
+
 .parent::after
 {
     top: -20%;
