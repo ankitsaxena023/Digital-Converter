@@ -232,16 +232,15 @@ body
 #setVal
 {
     position: relative;
-    left: 3.9rem;
+    left: 3.7rem;
     padding: 0.7rem 6.7rem 0.7rem 0.3rem;
     border-radius: 5px;
-    
 }
 
 #getVal
 {
     position: relative;
-    left: 1.9rem;
+    left: 1.7rem;
     padding: 0.7rem 6.7rem 0.7rem 0.3rem;
     border-radius: 5px;
 }
